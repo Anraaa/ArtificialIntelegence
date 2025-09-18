@@ -8,4 +8,11 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateStudent extends CreateRecord
 {
     protected static string $resource = StudentResource::class;
+
+    protected function getRedirectUrl(): string
+    {
+        // getResource()::getUrl('index') akan secara dinamis
+        // mendapatkan URL halaman list dari resource ini.
+        return $this->getResource()::getUrl('index');
+    }
 }
