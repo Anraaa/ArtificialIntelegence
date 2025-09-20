@@ -18,7 +18,6 @@ Proyek ini adalah contoh sempurna dari arsitektur microservice di mana aplikasi 
 - **API Terpisah**: Layanan Machine Learning berjalan secara independen, memungkinkan pembaruan model tanpa mengganggu aplikasi web utama.
 
 ## 🏛️ Arsitektur Sistem
-## 🏛️ Arsitektur Sistem
 
 Aplikasi ini menggunakan arsitektur client-server di mana Laravel Filament bertindak sebagai client yang mengirimkan permintaan HTTP ke server API Python.
 
@@ -32,10 +31,10 @@ Aplikasi ini menggunakan arsitektur client-server di mana Laravel Filament berti
 
 | Komponen | Teknologi |
 |----------|-----------|
-| Backend & Admin Panel | PHP 8.1+, Laravel 10, Filament 3 |
-| API Machine Learning | Python 3.9+, Flask, Waitress, Scikit-learn, Pandas, Joblib |
-| Database | MySQL / PostgreSQL / SQLite |
-| Lingkungan Development | Composer, NPM, Python venv |
+| Backend & Admin Panel | PHP 8.3, Laravel 11+, Filament 4 |
+| API Machine Learning | Python 3.9+, Flask, Scikit-learn, Pandas, Joblib, Numpy |
+| Database | MySQL |
+| Lingkungan Development | Composer, Python venv |
 
 ## 🚀 Panduan Instalasi dan Setup
 
@@ -45,9 +44,8 @@ Untuk menjalankan proyek ini, Anda perlu menjalankan dua aplikasi terpisah: API 
 - Git
 - Docker & Docker Compose
 - Python 3.9+
-- PHP 8.1+
+- PHP 8.3
 - Composer
-- NPM
 
 ### Setup dengan Docker (Direkomendasikan)
 
@@ -177,12 +175,12 @@ php artisan make:filament-user
 php artisan serve
 ```
 
-Server akan berjalan di http://127.0.0.1:8000.
+Server akan berjalan di http://localhost.
 
 ## 🎮 Cara Menggunakan
 
 1. Pastikan kedua server (Python API dan Laravel) sedang berjalan di terminalnya masing-masing.
-2. Buka browser dan akses panel admin Anda: http://127.0.0.1:8000/admin
+2. Buka browser dan akses panel admin Anda: http://localhost/admin
 3. Login dengan akun admin yang telah Anda buat.
 4. Navigasi ke menu "Students" di sidebar.
 5. Klik tombol "Prediksi" (ikon ✨) pada salah satu baris siswa.
