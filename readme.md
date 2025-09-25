@@ -36,11 +36,7 @@ Proyek ini adalah contoh sempurna dari arsitektur *microservice* di mana antarmu
 
 Aplikasi ini menggunakan arsitektur *client-server* di mana Laravel Filament dan Flutter bertindak sebagai dua *client* berbeda yang mengirimkan permintaan HTTP ke server API Python yang sama.
 
-
-<div align="center">
-    <img src="hhttps://github.com/Anraaa/ArtificialIntelegence/blob/main/docs/img/arsitektur.png" alt="test">
-</div>
-
+![arsitektur-sistem](docs/img/arsitektur.png)
 
 ---
 
