@@ -61,4 +61,4 @@ print(f"Skor R^2: {model_pipeline.score(X_test, y_test):.2f}")
 # Ini sangat penting! Kita menyimpan preprocessor DAN model yang sudah dilatih.
 # Jadi, saat nanti dipakai untuk prediksi, data baru akan otomatis diproses dengan benar.
 joblib.dump(model_pipeline, 'student_score_model.pkl')
-print("Pipeline lengkap (preprocessor + model) berhasil disimpan sebagai 'student_score_model.pkl'.")
+print("Pipeline lengkap (preprocessor + model) berhasil disimpan sebagai 'student_score_model.pkl'.")   
